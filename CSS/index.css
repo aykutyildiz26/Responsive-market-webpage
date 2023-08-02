@@ -1,0 +1,76 @@
+.container{
+
+    background-color: cornsilk;
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    flex: 1 1 1;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.middle{
+
+    border-left: solid 10px purple;
+    background-color:floralwhite;
+    display: flex;
+    margin: 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.middle > div{
+    flex-direction: column;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.buytext{
+    background-color: blueviolet;
+    width: 100px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+.socialmedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 120px;
+}
+
+
+@media all and (max-width: 950px){
+    .container{
+        flex-wrap: wrap;
+    }
+    .container > li{
+        flex: 1 1 50%;
+    }
+     .mainlogo{
+        order: -1;
+    }
+    .middle > div{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .socialmedia{
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 500px){
+    .container > li{
+        flex: 1 1 100%;
+    }
+    .mainlogo{
+        order: -1;
+    }
+    .middle > div{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
